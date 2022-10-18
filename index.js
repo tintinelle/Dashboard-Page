@@ -49,7 +49,7 @@ const brandsChart = new Chart(ctxBrands, {
         labels: ['Adidas', 'Nike', 'Puma', 'Bosco'],
         datasets: [{
             label: 'Brand',
-            data: [56, 48, 37, 22],
+            data: [0.56, 0.48, 0.37, 0.22],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -67,10 +67,14 @@ const brandsChart = new Chart(ctxBrands, {
     },
     options: {
         indexAxis: 'y',
-        plugins: {
-            title: {
-                display: true,
-                text: 'Custom Chart Subtitle'
+
+        scales: {
+            x: {
+                ticks: {
+                    format: {
+                        style: 'percent'
+                    }
+                }
             }
         }
     }

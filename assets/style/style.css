@@ -1,3 +1,49 @@
-.sales-chart {
-    width: 400px;
+
+body {
+    background-color: #666464;
+}
+
+.main__title {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: rgb(90, 90, 90);
+
+    background-color: #CDCBE2;
+}
+
+.date {
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: rgb(204, 204, 204);;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.chart {
+    background-color: #CDCBE2;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.chart_sales {
+    width: 15%;
+
+    text-align: center;
+}
+
+.chart_brands {
+    width: 35%;
+}
+
+.chart_sizes {
+    width: 35%;
 }
